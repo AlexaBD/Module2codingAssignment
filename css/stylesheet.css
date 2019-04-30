@@ -1,0 +1,129 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+h2{
+    color: #ff0b55;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 200%;
+    
+}
+p{
+    font-size: 30px;
+    text-align: justify;
+    padding: 2.5%;
+}
+.row{
+    width: 90%;
+    margin: auto;
+  
+}
+.chicken, .beef, .sushi {
+    border: 3px solid orange;
+    background-color:#e8e8e8;
+    width: 33%;
+    float:left;
+    text-align: left;
+    
+}
+
+.chicken, .beef{
+    margin-right:.5%;
+    margin-bottom: .5%;
+}
+
+.para{
+    
+    margin-top: 50px;
+    margin-bottom: 15px;
+    
+}
+
+.chikmenu, .beefmenu, .sushimenu{
+    background-color: #f5e1da;
+    display: inline-block;
+    float: right;
+    outline: 2px solid #7189bf;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: -2px;
+}
+
+/* large screen */
+@media  (min-width:1200px) {
+    .chicken, .beef, .sushi {
+        border: 3px solid orange;
+        
+        width: 33%;
+        float:left;
+        text-align: left;
+        
+    }
+    
+}
+
+/* medium screen */
+/* @media (min-width:768px) and (max-width:1199px) {
+    .chicken {
+        border: 3px solid orange;
+        width: 50%;
+        float:left;
+    }
+
+    .beef {
+            border: 3px solid orange;
+            width: 50%;
+            float:left;
+        
+    }
+    .sushi {
+        border: 3px solid orange;
+        width: 100%;
+        float:left;
+    }
+
+} */
+@media (min-width:768px) and (max-width:1199px) {
+
+    .chicken, .beef{
+        width: 50%;
+        /* float: left; */
+        position: relative;
+    }
+
+    .sushi{
+
+        width:100%;
+        
+    }
+
+}
+/* for small screen */
+
+@media (max-width:767px) {
+    .chicken {
+        border: 3px solid orange;
+        width: 100%;
+        float:left;
+    }
+
+    .beef {
+            border: 3px solid orange;
+            width: 100%;
+            float:left;
+        
+    }
+    .sushi {
+        border: 3px solid orange;
+        width: 100%;
+        float:left;
+    }
+
+}
